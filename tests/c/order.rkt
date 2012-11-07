@@ -1,4 +1,4 @@
-#lang planet jaymccarthy/c
+#lang c
 
 #include <stdio.h>
 

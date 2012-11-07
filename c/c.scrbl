@@ -4,11 +4,12 @@
 @title[#:tag "top"]{C}
 @author[(author+email "Jay McCarthy" "jay@racket-lang.org")]
 
-This package is for writing C programs in DrRacket. I use it in class to demonstrate things in C very quickly.
+This package is for writing C programs in DrRacket. I use it in class
+to demonstrate things in C very quickly.
 
 Here is a little example:
 @verbatim{
-#lang planet jaymccarthy/c
+#lang c
 
 #include <stdio.h>
 
