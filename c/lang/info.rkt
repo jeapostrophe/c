@@ -5,7 +5,6 @@
 (define scribblings '(["c.scrbl" (multi-page)]))
 (define categories '(devtools))
 (define primary-file "main.rkt")
-(define compile-omit-paths '("examples"))
 (define release-notes 
   (list
    '(ul (li "Initial release"))))

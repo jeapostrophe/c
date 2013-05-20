@@ -1,4 +1,6 @@
-#lang racket
+#lang racket/base
+(require racket/file
+         racket/system)
 (define (run-c-program bs)
   (define src-path (make-temporary-file "~a.c"))
   (with-output-to-file src-path (λ () (write-bytes bs)) #:exists 'replace)
