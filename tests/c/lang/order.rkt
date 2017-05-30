@@ -8,10 +8,10 @@ float f( float x1, float x2 ) {
 
 int main() {
   int x = 0;
-  float r = (++x) / (++x);
+  float r = (x+1) / (x+2);
   printf("%4.2f\n", r);
   x = 0;
-  r = f((++x),(++x));
+  r = f((x+1),(x+2));
   printf("%4.2f\n", r);
   r = 1.0 / 2.0;
   printf("%4.2f\n", r);

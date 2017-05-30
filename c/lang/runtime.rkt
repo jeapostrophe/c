@@ -5,7 +5,7 @@
   (define src-path (make-temporary-file "~a.c"))
   (with-output-to-file src-path (λ () (write-bytes bs)) #:exists 'replace)
   (define exe-path (path-add-suffix src-path #".bin"))
-  (define cc-path (find-executable-path "c++"))
+  (define cc-path (find-executable-path "cc"))
   (cond [(path? cc-path)
          (system* cc-path (path->string src-path) "-o" (path->string exe-path))
          (system* exe-path)]
